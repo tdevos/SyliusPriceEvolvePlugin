@@ -1,0 +1,5 @@
+services:
+    app.form.extension.type.product_variant:
+        class: SyliusPriceEvolvePlugin\Form\Extension\PricingsExtension
+        tags:
+            - { name: form.type_extension, extended_type: Sylius\Bundle\CoreBundle\Form\Type\Product\ChannelPricingType, priority: -10000000 }
