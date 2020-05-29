@@ -1,15 +1,12 @@
 <?php
 
-namespace SyliusPriceEvolvePlugin\Form\Extension;
+namespace Tdevos\SyliusPriceEvolvePlugin\Form\Extension;
 
 use Sylius\Bundle\CoreBundle\Form\Type\Product\ChannelPricingType;
-use Sylius\Bundle\ProductBundle\Form\Type\ProductVariantType;
-use SyliusPriceEvolvePlugin\Form\Type\PricingsType;
+use Tdevos\SyliusPriceEvolvePlugin\Form\Type\PricingsType;
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Form\FormInterface;
-use Symfony\Component\Form\FormView;
 
 class PricingsExtension extends AbstractTypeExtension {
     public function buildForm(FormBuilderInterface $builder, array $options)

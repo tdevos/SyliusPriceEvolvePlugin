@@ -2,14 +2,13 @@
 
 declare(strict_types=1);
 
-namespace SyliusPriceEvolvePlugin\Entity\Channel;
+namespace Tdevos\SyliusPriceEvolvePlugin\Entity\Channel;
 
-use App\Repository\OverTimePriceRepository;
 use App\Entity\Channel\ChannelPricing;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=OverTimePriceRepository::class)
+ * @ORM\Entity
  */
 class OverTimePrice
 {

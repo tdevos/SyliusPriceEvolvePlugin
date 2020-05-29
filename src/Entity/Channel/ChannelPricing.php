@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SyliusPriceEvolvePlugin\Entity\Channel;
+namespace Tdevos\SyliusPriceEvolvePlugin\Entity\Channel;
 use Doctrine\ORM\Mapping as ORM;
 
-use SyliusPriceEvolvePlugin\Entity\Channel\OverTimePrice;
+use Tdevos\SyliusPriceEvolvePlugin\Entity\Channel\OverTimePrice;
 use Doctrine\ORM\PersistentCollection;
 
 trait ChannelPricing

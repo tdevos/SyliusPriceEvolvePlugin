@@ -1,5 +1,5 @@
 {
-    "name": "SyliusPriceEvolvePlugin/SyliusPriceEvolvePlugin",
+    "name": "tdevos/SyliusPriceEvolvePlugin",
     "type": "sylius-plugin",
     "keywords": ["sylius", "sylius-plugin"],
     "description": "Extended price system for Sylius",
@@ -36,7 +36,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "SyliusPriceEvolvePlugin\\": "src/",
+            "Tdevos\\SyliusPriceEvolvePlugin\\": "src/",
             "Tests\\Acme\\SyliusExamplePlugin\\": "tests/"
         }
     },

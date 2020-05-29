@@ -1,8 +1,8 @@
 <?php
 
-namespace SyliusPriceEvolvePlugin\Form\Type;
+namespace Tdevos\SyliusPriceEvolvePlugin\Form\Type;
 
-use SyliusPriceEvolvePlugin\Entity\Channel\OverTimePrice;
+use Tdevos\SyliusPriceEvolvePlugin\Entity\Channel\OverTimePrice;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\FormBuilderInterface;
