@@ -26,6 +26,12 @@ class OverTimePrice
     public $price;
 
     /**
+     * @ORM\Column(type="integer")
+     * @var int|null
+     */
+    public $originalPrice;
+
+    /**
      * @ORM\Column(type="datetime")
      * @var \DateTime
      */

@@ -14,6 +14,7 @@ class PricingsType extends AbstractType
     {
         $builder
             ->add("price")
+            ->add("originalPrice")
             ->add("startDate", DateTimeType::class, [
                 "widget" => "single_text"
             ])

@@ -12,7 +12,7 @@ trait ChannelPricing
 {
     /**
      * @ORM\OneToMany(targetEntity=OvertimePrice::class, mappedBy="channelPricing",cascade={"persist"})
-     * @var PersistentCollection
+     * @var OverTimePrice[]
      */
     protected $overTimePrices;
 
@@ -21,6 +21,15 @@ trait ChannelPricing
         foreach ($this->overTimePrices as $overTimePrice) {
             if($overTimePrice->startDate < new \DateTime())
                 $price = $overTimePrice->price;
+        }
+        return $price;
+    }
+
+    public function getOriginalPrice(): ?int{
+        $price = 0;
+        foreach ($this->overTimePrices as $overTimePrice) {
+            if($overTimePrice->startDate < new \DateTime())
+                $price = $overTimePrice->originalPrice;
         }
         return $price;
     }
