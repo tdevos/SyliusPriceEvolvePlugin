@@ -4,13 +4,13 @@
 
 ## Documentation
 
-This plugin propose to schedule the price of a product. Set a startTime, and forget it
+This plugin propose to schedule the price of a product. Just set the price and a startTime
 
 ## Quickstart Installation
 
-1. Run `composer require tdevos/sylius-price-evolve-plugin`.
+1. Run `composer require tdevos/sylius-price-evolve-plugin`
 
-2. Add `Tdevos\SyliusPriceEvolvePlugin\SyliusPriceEvolvePlugin::class => ['all' => true]` to your bundle.php
+2. Add `Tdevos\SyliusPriceEvolvePlugin\SyliusPriceEvolvePlugin::class => ['all' => true]` to your `bundle.php`
 
 3. Create a file `config/packages/pricing_extension.yaml`
 ```
